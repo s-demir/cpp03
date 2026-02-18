@@ -34,7 +34,7 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &other)
 
 ScavTrap::~ScavTrap()
 {
-	std::cout << "ScavTrap Destructor called for " << this->_name << std::endl; 
+	std::cout << "ScavTrap Destructor called for " << this->_name << std::endl;
 }
 
 void	ScavTrap::attack(const std::string &target)
@@ -51,8 +51,8 @@ void	ScavTrap::attack(const std::string &target)
 	}
 	this->_energy -= 1;
 	std::cout << "ScavTrap " << this->_name << " attacks " << target
-				<< " HARDLY, causing " << this->_attack << " points of damage!" << std::endl;
-}			
+				<< " HARSHLY, causing " << this->_attack << " points of damage!" << std::endl;
+}
 
 void	ScavTrap::guardGate()
 {
@@ -61,5 +61,5 @@ void	ScavTrap::guardGate()
 		std::cout << "ScavTrap " << this->_name << " cannot guardGate cause it's dead!" << std::endl;
 		return ;
 	}
-	std::cout << "ScavTrap " << this->_name << " is now in guardGate mode." << std::endl; 
+	std::cout << "ScavTrap " << this->_name << " is in guardGate mode now." << std::endl;
 }
